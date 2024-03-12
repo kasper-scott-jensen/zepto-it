@@ -7,11 +7,11 @@
     import CTA from '../components/buttons/CTA.svelte'
 
     const slide1 = 'src/assets/bg/img-10.jpg'
-    const slide2 = 'src/assets/bg/img-15.jpg'
+    const slide2 = 'src/assets/bg/img-09.jpg'
     const slide3 = 'src/assets/bg/img-14.jpg'
     const slide4 = 'src/assets/bg/img-89.jpg'
     const slide5 = ''
-    const slide6 = 'src/assets/bg/img-95.jpg'
+    const slide6 = 'src/assets/bg/img-03.jpg'
 </script>
 
 <SidePole />
@@ -54,25 +54,25 @@
             </p>
             <ul class="flex">
                 <li class="col-6-12 ae-3">
-                    <h3 class="margin-top-3">IT Support</h3>
+                    <h3 class="margin-top-3"><i class="fa-solid fa-circle-question padding-right-1"></i>IT Support</h3>
                     <p class="tiny opacity-6">
                         General support with any issues you might have. Have you tried turning it off and on again?
                     </p>
                 </li>
                 <li class="col-6-12 ae-4">
-                    <h3 class="margin-top-3">Consulting</h3>
+                    <h3 class="margin-top-3"><i class="fa-solid fa-users padding-right-1"></i>Consulting</h3>
                     <p class="tiny opacity-6">
                         Looking to digitalize your company? We can help you get a great start.
                     </p>
                 </li>
                 <li class="col-6-12 ae-5">
-                    <h3 class="margin-top-3">Software Development</h3>
+                    <h3 class="margin-top-3"><i class="fa-solid fa-code padding-right-1"></i>Software Development</h3>
                     <p class="tiny opacity-6">
                         In need of custom code? We house talented programmers, ready to go.
                     </p>
                 </li>
                 <li class="col-6-12 ae-6">
-                    <h3 class="margin-top-3">Website</h3>
+                    <h3 class="margin-top-3"><i class="fa-solid fa-globe padding-right-1"></i>Website</h3>
                     <p class="tiny opacity-6">
                         We do website development, optimization and templating. And everything in between.
                     </p>

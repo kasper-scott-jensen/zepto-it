@@ -18,12 +18,12 @@
             <ul class="menu trim">
                 <li>
                     <a href="#" target="_blank"
-                        ><i class="fa-brands fa-facebook-f"></i></a
+                        ><i class="fab fa-facebook-f"></i></a
                     >
                 </li>
                 <li>
                     <a href="#" target="_blank"
-                        ><i class="fa-brands fa-instagram-square"></i></a
+                        ><i class="fa-brands fa-instagram"></i></a
                     >
                 </li>
                 <li>
