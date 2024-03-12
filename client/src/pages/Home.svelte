@@ -1,0 +1,208 @@
+<script>
+    import SidePole from '../components/navigation/SidePole.svelte'
+    import TopPanel from '../components/navigation/TopPanel.svelte'
+    import SideBar from '../components/navigation/SideBar.svelte'
+    import Slide from '../components/layouts/Slide.svelte'
+
+    import CTA from '../components/buttons/CTA.svelte'
+
+    const slide1 = 'src/assets/bg/img-10.jpg'
+    const slide2 = 'src/assets/bg/img-15.jpg'
+    const slide3 = 'src/assets/bg/img-14.jpg'
+    const slide4 = 'src/assets/bg/img-89.jpg'
+    const slide6 = 'src/assets/bg/img-95.jpg'
+</script>
+
+<SidePole />
+<TopPanel />
+<SideBar />
+
+<Slide bg={slide1} slideDir={null} anchor={'home'}>
+    <div class="fix-12-12">
+        <div class="fix-3-12 ae-2 margin-bottom-6">
+            <img src="src/assets/svg/icon_white.svg" alt="icon" width="80px" />
+        </div>
+        <p class="ae-3 thin">
+            <span
+                >We provide <b>reliable</b> IT solutions and <b>peace</b> of
+                mind.
+                <br />Help is <b>one</b> click away.</span
+            >
+        </p>
+        <CTA
+            color={'indigo'}
+            slideDir={'fromCenter'}
+            animation={'ae-4'}
+            text={'Get Started'}
+        />
+    </div>
+</Slide>
+
+<Slide bg={slide2} slideDir={'fromLeft'} anchor={'services'}>
+    <div class="fix-12-12">
+        <div class="fix-7-12 left toRight">
+            <h1 class="ae-1">
+                Designing a product is designing a relationship
+            </h1>
+            <p class="ae-2">
+                <span class="opacity-8"
+                    >Man was designed in a way in which he must eat in order to
+                    give him a solid reason to go to work everyday. This helps
+                    to keep him out of trouble. God is&nbsp;wise.</span
+                >
+            </p>
+            <a class="button blue gradient crop ae-3" href="#">Get Started</a>
+        </div>
+    </div>
+</Slide>
+
+<Slide bg={slide3} slideDir={'fromRight'} anchor={'portfolio'}>
+    <div class="fix-12-12">
+        <div class="fix-6-12 left toLeft">
+            <h1 class="ae-1">
+                Designers are meant to be loved, not to be
+                understood.
+            </h1>
+            <p class="ae-2">
+                <span class="opacity-8"
+                    >You must forget all your theories, all your
+                    ideas before the subject. What part of these is
+                    really your own will be expressed in
+                    your&nbsp;expression.</span
+                >
+            </p>
+            <a class="button blue gradient crop ae-3" href="#"
+                >Get Started</a
+            >
+        </div>
+    </div>
+</Slide>
+
+<Slide bg={slide4} slideDir={null} anchor={'about'}>
+    <div class="fix-12-12">
+        <ul class="flex left">
+            <li class="col-6-12 fromBottomLeft">
+                <p class="opacity-6 margin-bottom-2 ae-1">
+                    Case study
+                </p>
+                <h1 class="ae-2">The Secret of Success</h1>
+                <div class="ae-3">
+                    <p class="opacity-8">
+                        No matter how many times your amazing,
+                        absolutely brilliant work is rejected by the
+                        client, for whatever dopey, arbitrary
+                        reason, there is often another amazing,
+                        absolutely brilliant solution possible.
+                    </p>
+                </div>
+                <ul class="flex">
+                    <li class="col-6-12 ae-3">
+                        <h3 class="margin-top-3">Camera</h3>
+                        <p class="tiny opacity-6">
+                            Scan entire conversations in a chat-like
+                            view.
+                        </p>
+                    </li>
+                    <li class="col-6-12 ae-4">
+                        <h3 class="margin-top-3">Messages</h3>
+                        <p class="tiny opacity-6">
+                            Quickly swipe messages to your archive
+                            or trash.
+                        </p>
+                    </li>
+                    <li class="col-6-12 ae-5">
+                        <h3 class="margin-top-3">Music Center</h3>
+                        <p class="tiny opacity-6">
+                            Unforgettable feelings through a quality
+                            music.
+                        </p>
+                    </li>
+                    <li class="col-6-12 ae-6">
+                        <h3 class="margin-top-3">Channels</h3>
+                        <p class="tiny opacity-6">
+                            Read reviews, compare customer ratings.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="col-1-12">&nbsp;</li>
+            <li class="col-5-12 bottom">
+                <div
+                    class="videoThumbnail shadow rounded popupTrigger margin-bottom-3 ae-7"
+                    data-popup-id="89-3"
+                >
+                    <img
+                        src="assets/img/image-89-1.jpg"
+                        class="wide"
+                        alt="Video Thumbnail"
+                    />
+                </div>
+                <img
+                    src="src/assets/img/image-89-2.jpg"
+                    data-action="zoom"
+                    class="shadow rounded ae-8"
+                    alt="Image"
+                />
+            </li>
+        </ul>
+    </div>
+</Slide>
+
+<Slide bg={slide6} slideDir={null} anchor={'contact'}>
+    <div class="fix-6-12">
+        <h1 class="huge ae-1 margin-bottom-2">
+            Download Mobile App
+        </h1>
+        <p class="hero ae-2 margin-bottom-3">
+            <span class="opacity-8"
+                >Learning never exhausts the mind.</span
+            >
+        </p>
+
+        <form
+            action="#"
+            autocomplete="off"
+            class="slides-form margin-bottom-3"
+        >
+            <input
+                type="email"
+                class="ae-3"
+                name="email"
+                placeholder="E-mail address"
+            />
+            <button
+                type="submit"
+                class="button blue gradient ae-4"
+                name="submit">Try it free</button
+            >
+        </form>
+
+        <a href="#" class="button hollow ae-5"
+            ><img
+                src="src/assets/img/appstore.jpg"
+                height="63"
+            /></a
+        ><a href="#" class="button hollow ae-6"
+            ><img
+                src="src/assets/img/googleplay.jpg"
+                height="63"
+            /></a
+        >
+    </div>
+</Slide>
+
+<!-- Panel Bottom #15 -->
+<nav class="panel bottom lastSlideOnly">
+    <div class="sections">
+        <div class="center">
+            <a href="#" class="opacity-8"
+                >Available <svg style="height:21px;"
+                    ><use
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xlink:href="#apple"
+                    ></use></svg
+                > iPhone</a
+            >
+        </div>
+    </div>
+</nav>
