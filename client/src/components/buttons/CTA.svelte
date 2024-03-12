@@ -1,8 +1,14 @@
 <script>
-    export let color
     export let slideDir
     export let animation
     export let text
+    export let target
 </script>
 
-<button type="submit" class="button {color} gradient {animation} {slideDir}" name="button">{text}</button>
+<div class="main_div {slideDir} {animation}">
+    <a href={target}><button>{text}</button></a>
+</div>
+
+<style>
+    @import '../../css/button.sanket.css';
+</style>

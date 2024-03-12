@@ -23,7 +23,12 @@
                 </li>
                 <li>
                     <a href="#" target="_blank"
-                        ><i class="fa-brands fa-instagram"></i></a
+                        ><i class="fa-brands fa-instagram-square"></i></a
+                    >
+                </li>
+                <li>
+                    <a href="#" target="_blank"
+                        ><i class="fa-brands fa-twitter"></i></a
                     >
                 </li>
                 <li class="cropRight">
