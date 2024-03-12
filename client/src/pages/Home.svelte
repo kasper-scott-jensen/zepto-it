@@ -1,8 +1,9 @@
 <script>
-    import SidePole from '../components/navigation/SidePole.svelte'
-    import TopPanel from '../components/navigation/TopPanel.svelte'
-    import SideBar from '../components/navigation/SideBar.svelte'
+    import SidePole from '../components/sidebar/SidePole.svelte'
+    import TopPanel from '../components/header/TopPanel.svelte'
+    import SideBar from '../components/sidebar/SideBar.svelte'
     import Slide from '../components/layouts/Slide.svelte'
+    import BottomPanel from '../components/footer/BottomPanel.svelte'
 
     import CTA from '../components/buttons/CTA.svelte'
 
@@ -191,18 +192,4 @@
     </div>
 </Slide>
 
-<!-- Panel Bottom #15 -->
-<nav class="panel bottom lastSlideOnly">
-    <div class="sections">
-        <div class="center">
-            <a href="#" class="opacity-8"
-                >Available <svg style="height:21px;"
-                    ><use
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xlink:href="#apple"
-                    ></use></svg
-                > iPhone</a
-            >
-        </div>
-    </div>
-</nav>
+<BottomPanel />

@@ -2,8 +2,5 @@
 
 body {
     font-family: 'Ubuntu', sans-serif !important;
-}
-
-html {
-    scroll-behavior: smooth !important;
+    caret-color: transparent !important;
 }
