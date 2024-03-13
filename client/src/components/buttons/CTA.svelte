@@ -6,7 +6,7 @@
 </script>
 
 <div class="main_div {slideDir} {animation}">
-    <a href={target}><button>{text}</button></a>
+    <a href={target}><button type="submit" class="bold">{text}</button></a>
 </div>
 
 <style>

@@ -2,7 +2,7 @@
     <div class="sections desktop">
         <div class="left">
             <a href="#home"
-                ><img src="src/assets/svg/combo_white.svg" alt="Logo" width="180px"></a
+                ><img src="src/assets/svg/combo_white.svg" alt="logo" width="180px"></a
             >
         </div>
         <div class="center">
@@ -17,23 +17,23 @@
         <div class="right">
             <ul class="menu trim">
                 <li>
-                    <a href="#" target="_blank"
+                    <a href="https://www.facebook.com" target="_blank"
                         ><i class="fab fa-facebook-f"></i></a
                     >
                 </li>
                 <li>
-                    <a href="#" target="_blank"
+                    <a href="https://www.instragram.com" target="_blank"
                         ><i class="fa-brands fa-instagram"></i></a
                     >
                 </li>
                 <li>
-                    <a href="#" target="_blank"
+                    <a href="https://www.x.com" target="_blank"
                         ><i class="fa-brands fa-twitter"></i></a
                     >
                 </li>
                 <li class="cropRight">
                     <a
-                        href="#"
+                        href="https://www.linkedin.com"
                         class="trimRight"
                         target="_blank"
                         ><i class="fa-brands fa-linkedin-in"></i></a
@@ -44,8 +44,8 @@
     </div>
     <div class="sections compact hidden">
         <div class="left">
-            <a href="https://designmodo.com/?u=3165" title="Slides Framework"
-                ><i class="fa-brands fa-slack"></i></a
+            <a href="#home" title="Slides Framework"
+                ><img src="src/assets/svg/combo_white.svg" alt="logo" width="180px"></a
             >
         </div>
         <div class="right">

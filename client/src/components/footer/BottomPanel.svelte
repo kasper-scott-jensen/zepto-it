@@ -1,14 +1,11 @@
+<script>
+    const year = new Date().getFullYear()
+</script>
+
 <nav class="panel bottom lastSlideOnly">
     <div class="sections">
         <div class="center">
-            <a href="#" class="opacity-8"
-                >Available <svg style="height:21px;"
-                    ><use
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xlink:href="#apple"
-                    ></use></svg
-                > iPhone</a
-            >
+            <p class="tiny opacity-8">Copyright &copy; {year}</p>
         </div>
     </div>
 </nav>

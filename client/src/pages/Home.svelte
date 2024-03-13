@@ -3,15 +3,20 @@
     import TopPanel from '../components/header/TopPanel.svelte'
     import SideBar from '../components/sidebar/SideBar.svelte'
     import Slide from '../components/layouts/Slide.svelte'
-    import BottomPanel from '../components/footer/BottomPanel.svelte'
     import CTA from '../components/buttons/CTA.svelte'
+    import BottomPanel from '../components/footer/BottomPanel.svelte'
 
     const slide1 = 'src/assets/bg/img-10.jpg'
     const slide2 = 'src/assets/bg/img-09.jpg'
     const slide3 = 'src/assets/bg/img-14.jpg'
-    const slide4 = 'src/assets/bg/img-89.jpg'
+    const slide4 = 'src/assets/bg/img-04.jpg'
     const slide5 = ''
     const slide6 = 'src/assets/bg/img-03.jpg'
+
+    function handleContactSubmit(event) {
+        event.preventDefault()
+        // handle email functionality
+    }
 </script>
 
 <SidePole />
@@ -89,44 +94,30 @@
                 <p class="opacity-6 margin-bottom-2 ae-1">
                     Portfolio
                 </p>
-                <h1 class="ae-2">The Secret of Success</h1>
+                <h1 class="ae-2">Our amazing customers</h1>
                 <div class="ae-3">
-                    <p class="opacity-8">
-                        No matter how many times your amazing,
-                        absolutely brilliant work is rejected by the
-                        client, for whatever dopey, arbitrary
-                        reason, there is often another amazing,
-                        absolutely brilliant solution possible.
+                    <p class="opacity-8 margin-bottom-6">
+                        We have had the pleasure of working with many valued customers.
+                        Each one has added a unique perspective and set of challenges, driving us to innovate and improve our services.
                     </p>
                 </div>
                 <ul class="flex">
-                    <li class="col-6-12 ae-3">
-                        <h3 class="margin-top-3">Camera</h3>
+                    <li class="col-6-12 ae-3 margin-bottom-6">
+                        <a href="https://www.aim-robotics.com" target="_blank"><img src="src/assets/img/aim-robotics-logo.png" alt="icon" width="200px" /></a>
                     </li>
-                    <li class="col-6-12 ae-4">
-                        <h3 class="margin-top-3">Messages</h3>
-                    </li>
-                    <li class="col-6-12 ae-5">
-                        <h3 class="margin-top-3">Music Center</h3>
-                    </li>
-                    <li class="col-6-12 ae-6">
-                        <h3 class="margin-top-3">Channels</h3>
+                    <li class="col-6-12 ae-4 margin-bottom-6">
+                        <a href="https://www.ungkrisecenter.dk" target="_blank"><img src="src/assets/img/ung-krisecenter-logo.png" alt="icon" width="200px" /></a>
                     </li>
                 </ul>
             </li>
             <li class="col-1-12">&nbsp;</li>
             <li class="col-5-12 bottom">
+                <!-- svelte-ignore a11y-img-redundant-alt -->
                 <img
-                    src="src/assets/img/image-89-2.jpg"
+                    src="src/assets/img/partnership.jpg"
                     data-action="zoom"
-                    class="shadow rounded ae-8 margin-bottom-6"
-                    alt="Image"
-                />
-                <img
-                    src="src/assets/img/image-89-2.jpg"
-                    data-action="zoom"
-                    class="shadow rounded ae-8"
-                    alt="Image"
+                    class="shadow rounded ae-5 margin-bottom-6 margin-top-6"
+                    alt="image"
                 />
             </li>
         </ul>
@@ -140,23 +131,23 @@
                 About
             </p>
             <h1 class="ae-1">
-                Designers are meant to be loved, not to be
-                understood.
+                Nerds with a capital N
             </h1>
             <p class="ae-2 margin-bottom-6">
                 <span class="opacity-8"
-                    >You must forget all your theories, all your
-                    ideas before the subject. What part of these is
-                    really your own will be expressed in
-                    your&nbsp;expression.</span
+                    >
+                    Code monkeys, problem solvers and coffee addicts.
+                    A small company with large ambitions based in Copenhagen.
+                    We're not just here to meet expectations; we're here to exceed them.
+                    </span
                 >
             </p>
             <CTA
-            slideDir={null}
-            animation={'ae-3'}
-            text={'Read More'}
-            target={''}
-        />
+                slideDir={null}
+                animation={'ae-3'}
+                text={'Read More'}
+                target={''}
+            />
         </div>
     </div>
 </Slide>
@@ -166,44 +157,43 @@
         <p class="opacity-6 margin-bottom-2 ae-1">
             Contact
         </p>
-        <h1 class="huge ae-1 margin-bottom-2">
-            Download Mobile App
-        </h1>
-        <p class="hero ae-2 margin-bottom-3">
+        <img src="src/assets/svg/combo_white.svg" alt="icon" width="200px" class="ae-2 margin-bottom-4" />
+        <ul class="flex margin-bottom-4">
+            <li class="col-4-12 ae-3">
+                <h3><i class="fa-solid fa-phone padding-right-1"></i></h3><p class="tiny">+45 91 74 36 42</p>
+            </li>
+            <li class="col-4-12 ae-4">
+                <h3><i class="fa-solid fa-envelope padding-right-1"></i></h3><p class="tiny">contact@zeptoit.dk</p>
+            </li>
+            <li class="col-4-12 ae-5">
+                <h3><i class="fa-solid fa-building padding-right-1"></i></h3><p class="tiny">Copenhagen</p>
+            </li>
+        </ul>
+        <p class="hero ae-6 margin-bottom-3">
             <span class="opacity-8"
-                >Learning never exhausts the mind.</span
+                >Let's have a conversation.</span
             >
         </p>
-
         <form
-            action="#"
             autocomplete="off"
-            class="slides-form margin-bottom-3"
+            class="slides-form"
+            id="contact-form"
+            on:submit={handleContactSubmit}
         >
             <input
-                type="email"
-                class="ae-3"
-                name="email"
+                type="text"
+                class="ae-7 margin-right-3 margin-bottom-3"
+                name="name"
                 placeholder="E-mail address"
+                required
             />
-            <button
-                type="submit"
-                class="button blue gradient ae-4"
-                name="submit">Try it free</button
-            >
+            <CTA
+                slideDir={null}
+                animation={'ae-8'}
+                text={'Send'}
+                target={null}
+            />
         </form>
-
-        <a href="#" class="button hollow ae-5"
-            ><img
-                src="src/assets/img/appstore.jpg"
-                height="63"
-            /></a
-        ><a href="#" class="button hollow ae-6"
-            ><img
-                src="src/assets/img/googleplay.jpg"
-                height="63"
-            /></a
-        >
     </div>
 </Slide>
 
