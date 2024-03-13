@@ -1569,7 +1569,6 @@ html:not(.mobile) .slide.video .background[style] {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("../assets/svg/video-icon.svg") no-repeat;
   background-position: center center;
   transition: 0.5s;
 }
@@ -7708,7 +7707,6 @@ p.remind-43 {
   margin-bottom: 15px;
 }
 .music-96 .sc-play {
-  background-image: url(../assets/svg/play.svg);
   border: 1px solid rgba(0, 0, 0, 0.5);
   font-size: 0;
   width: 28px;
@@ -8072,7 +8070,6 @@ a.box-99:active, a.box-99:focus {
   border-radius: 6px;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/img/image-100.png);
   background-size: cover;
   background-position: center center;
 }

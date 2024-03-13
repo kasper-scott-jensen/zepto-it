@@ -5,6 +5,8 @@
     import Slide from '../components/layouts/Slide.svelte'
     import CTA from '../components/buttons/CTA.svelte'
     import BottomPanel from '../components/footer/BottomPanel.svelte'
+    import Trigger from '../components/buttons/Trigger.svelte'
+    import Video from '../components/modals/Video.svelte'
 
     const slide1 = 'src/assets/bg/img-10.jpg'
     const slide2 = 'src/assets/bg/img-09.jpg'
@@ -12,6 +14,8 @@
     const slide4 = 'src/assets/bg/img-04.jpg'
     const slide5 = ''
     const slide6 = 'src/assets/bg/img-03.jpg'
+
+    const vid1 = 'src/assets/vid/ricketyroll.mp4'
 
     function handleContactSubmit(event) {
         event.preventDefault()
@@ -142,15 +146,18 @@
                     </span
                 >
             </p>
-            <CTA
+            <Trigger 
                 slideDir={null}
                 animation={'ae-3'}
                 text={'Read More'}
-                target={''}
+                target={null}
+                id={9}
             />
         </div>
     </div>
 </Slide>
+
+<!-- <Video id={9} source={vid1} /> -->
 
 <Slide bg={slide6} slideDir={null} anchor={'contact'}>
     <div class="fix-6-12">
