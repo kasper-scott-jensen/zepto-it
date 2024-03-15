@@ -1,9 +1,7 @@
 <nav class="panel top">
     <div class="sections desktop">
         <div class="left">
-            <a href="#home"
-                ><img src="src/assets/svg/combo_white.svg" alt="logo" width="180px"></a
-            >
+            <a href="#home"><img src="src/assets/svg/combo_white.svg" alt="logo" width="180px"></a>
         </div>
         <div class="center">
             <ul class="menu uppercase">
@@ -17,41 +15,26 @@
         <div class="right">
             <ul class="menu trim">
                 <li>
-                    <a href="https://www.facebook.com" target="_blank"
-                        ><i class="fab fa-facebook-f"></i></a
-                    >
+                    <a href="https://www.facebook.com/zeptoitofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instragram.com" target="_blank"
-                        ><i class="fa-brands fa-instagram"></i></a
-                    >
+                    <a href="https://www.instagram.com/zeptoit/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.x.com" target="_blank"
-                        ><i class="fa-brands fa-twitter"></i></a
-                    >
+                    <a href="https://twitter.com/zeptoit" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
                 <li class="cropRight">
-                    <a
-                        href="https://www.linkedin.com"
-                        class="trimRight"
-                        target="_blank"
-                        ><i class="fa-brands fa-linkedin-in"></i></a
-                    >
+                    <a href="https://www.linkedin.com/company/zepto-it" class="trimRight" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
             </ul>
         </div>
     </div>
     <div class="sections compact hidden">
         <div class="left">
-            <a href="#home" title="Slides Framework"
-                ><img src="src/assets/svg/combo_white.svg" alt="logo" width="180px"></a
-            >
+            <a href="#home" title="Slides Framework"><img src="src/assets/svg/combo_white.svg" alt="logo" width="180px"></a>
         </div>
         <div class="right">
-            <span class="button actionButton sidebarTrigger" data-sidebar-id="1"
-                ><i class="fa-solid fa-bars"></i></span
-            >
+            <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><i class="fa-solid fa-bars"></i></span>
         </div>
     </div>
 </nav>

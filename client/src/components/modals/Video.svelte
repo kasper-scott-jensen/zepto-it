@@ -1,6 +1,7 @@
 <script>
   export let source
   export let id
+  export let title
 </script>
 
 <div class="popup autoplay" data-popup-id={id}>
@@ -9,11 +10,7 @@
       <div class="wrap">
         <div class="fix-10-12">
           <div class="embedVideo popupContent">
-            <!-- svelte-ignore a11y-media-has-caption -->
-            <video
-              src={source}
-              autoplay
-            ></video>
+            <iframe src={source} title={title} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>

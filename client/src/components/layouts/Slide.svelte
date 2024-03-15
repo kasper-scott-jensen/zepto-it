@@ -12,8 +12,5 @@
             </div>
         </div>
     </div>
-    <div
-        class="background"
-        style="background-image:url({bg})"
-    ></div>
+    <div class="background" style="background-image:url({bg})"></div>
 </section>

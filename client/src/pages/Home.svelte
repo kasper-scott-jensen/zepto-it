@@ -4,9 +4,6 @@
     import SideBar from '../components/sidebar/SideBar.svelte'
     import Slide from '../components/layouts/Slide.svelte'
     import CTA from '../components/buttons/CTA.svelte'
-    import BottomPanel from '../components/footer/BottomPanel.svelte'
-    import Trigger from '../components/buttons/Trigger.svelte'
-    import Video from '../components/modals/Video.svelte'
 
     const slide1 = 'src/assets/bg/img-10.jpg'
     const slide2 = 'src/assets/bg/img-09.jpg'
@@ -15,7 +12,7 @@
     const slide5 = ''
     const slide6 = 'src/assets/bg/img-03.jpg'
 
-    const vid1 = 'src/assets/vid/ricketyroll.mp4'
+    const vid1 = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s'
 
     function handleContactSubmit(event) {
         event.preventDefault()
@@ -33,16 +30,13 @@
             <img src="src/assets/svg/icon_white.svg" alt="icon" width="80px" />
         </div>
         <p class="ae-3 thin margin-bottom-6">
-            <span
-                >We provide <b>reliable</b> IT solutions and <b>peace</b> of mind.
-                <br />Help is <b>one</b> click away.</span
-            >
+            <span>We provide <b>reliable</b> IT solutions and <b>peace</b> of mind.<br>Help is <b>one</b> click away.</span>
         </p>
         <CTA
             slideDir={'fromCenter'}
             animation={'ae-4'}
             text={'Get Started'}
-            target={'#contact'}
+            target={'#services'}
         />
     </div>
 </Slide>
@@ -57,9 +51,9 @@
                 Dont worry - we got you covered
             </h1>
             <p class="ae-2">
-                <span class="opacity-8"
-                    >Never hesitate to call us. Our expertise covers a large area, and we are always ready to find the exact solution suited for you.</span
-                >
+                <span class="opacity-8">
+                    Never hesitate to call us. Our expertise covers a large area, and we are always ready to find the exact solution suited for you.
+                </span>
             </p>
             <ul class="flex">
                 <li class="col-6-12 ae-3">
@@ -138,26 +132,15 @@
                 Nerds with a capital N
             </h1>
             <p class="ae-2 margin-bottom-6">
-                <span class="opacity-8"
-                    >
+                <span class="opacity-8">
                     Code monkeys, problem solvers and coffee addicts.
                     A small company with large ambitions based in Copenhagen.
                     We're not just here to meet expectations; we're here to exceed them.
-                    </span
-                >
+                </span>
             </p>
-            <Trigger 
-                slideDir={null}
-                animation={'ae-3'}
-                text={'Read More'}
-                target={null}
-                id={9}
-            />
         </div>
     </div>
 </Slide>
-
-<!-- <Video id={9} source={vid1} /> -->
 
 <Slide bg={slide6} slideDir={null} anchor={'contact'}>
     <div class="fix-6-12">
@@ -165,6 +148,11 @@
             Contact
         </p>
         <img src="src/assets/svg/combo_white.svg" alt="icon" width="200px" class="ae-2 margin-bottom-4" />
+        <p class="hero ae-6 margin-bottom-4">
+            <span class="opacity-8">
+                Let's have a conversation.
+            </span>
+        </p>
         <ul class="flex margin-bottom-4">
             <li class="col-4-12 ae-3">
                 <h3><i class="fa-solid fa-phone padding-right-1"></i></h3><p class="tiny">+45 91 74 36 42</p>
@@ -176,32 +164,5 @@
                 <h3><i class="fa-solid fa-building padding-right-1"></i></h3><p class="tiny">Copenhagen</p>
             </li>
         </ul>
-        <p class="hero ae-6 margin-bottom-3">
-            <span class="opacity-8"
-                >Let's have a conversation.</span
-            >
-        </p>
-        <form
-            autocomplete="off"
-            class="slides-form"
-            id="contact-form"
-            on:submit={handleContactSubmit}
-        >
-            <input
-                type="text"
-                class="ae-7 margin-right-3 margin-bottom-3"
-                name="name"
-                placeholder="E-mail address"
-                required
-            />
-            <CTA
-                slideDir={null}
-                animation={'ae-8'}
-                text={'Send'}
-                target={null}
-            />
-        </form>
     </div>
 </Slide>
-
-<BottomPanel />
